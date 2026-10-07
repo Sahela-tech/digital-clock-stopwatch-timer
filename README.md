@@ -58,6 +58,6 @@ digital-clock-stopwatch-timer/
 
 1. Download or Clone this repository.
 2. **Launch Application:**
-Navigate into the `src/` directory and again navigate to `views` the open `index.html` in any web browser.
+Navigate into the `src/` directory and again navigate to `views/` the open `index.html` in any web browser.
 
 ---
