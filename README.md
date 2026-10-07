@@ -1,55 +1,64 @@
-# ⏱️ Digital Clock, Stopwatch & Timer
+# ⏱️ Digital Clock, Stopwatch & Timer (Modular Architecture)
 
-A modern, glassmorphism-themed web application for time tracking. Built with pure HTML5, CSS3, and JavaScript.
+A modern, responsive, and modular web application providing a Real-Time Clock, Stopwatch with millisecond precision, and a Countdown Timer. Built using pure Vanilla JavaScript, CSS, and HTML with a clean modular directory structure.
 
 ---
 
 ## 🌟 Overview
 
-Digital Clock, Stopwatch & Timer is a clean, modern, and lightweight web application built using Vanilla Web Technologies. Designed with a vibrant Glassmorphism UI, it provides three essential time tools inside a single responsive interface:
+The **Digital Clock, Stopwatch & Timer** application is structured with a clean separation of concerns, separating core functional modules (`clock`, `stopwatch`, `timer`) from the main view and entry point. Designed with a sleek **Glassmorphism UI**, it brings three time-tracking tools into a single interface.
 
-1. 🕒 Live Digital Clock with real-time date display.
-2. ⏱️ Precision Stopwatch with millisecond accuracy.
-3. ⏳ Countdown Timer with customizable inputs and completion alerts.
+1. 🕒 **Live Digital Clock:** Real-time 12-hour clock (with AM/PM) and date tracking.
+2. ⏱️ **Precision Stopwatch:** High-accuracy timer with millisecond resolution.
+3. ⏳ **Countdown Timer:** Configurable hours, minutes, and seconds with automated alert feedback.
 
 ---
 
 ## ✨ Features
 
-- 💎 Modern Glassmorphism UI: Built with sleek frosted-glass aesthetics, soft glow effects, and modern typography (Orbitron & Poppins).
-- 🕒 Real-Time Clock: Displays current 12-hour formatted time with AM/PM indicators alongside full date tracking.
-- ⚡ High Precision Stopwatch: Measures time seamlessly down to hundredths of a second (milliseconds).
-- ⌛ Interactive Countdown Timer: Allows custom inputs for hours, minutes, and seconds, accompanied by completion feedback.
-- 📱 Fully Responsive: Smoothly adapts to all screen sizes including desktop, tablets, and mobile devices.
-- 🚀 Zero Dependencies: Pure HTML, CSS, and Vanilla JavaScript — fast loading with zero heavy frameworks.
+- 🧩 **Modular Code Architecture:** Independent components for Clock, Stopwatch, and Timer for better maintainability and scalability.
+- 💎 **Glassmorphism UI:** Modern frosted-glass aesthetic using dynamic backdrop filters and vibrant typography (`Orbitron` & `Poppins`).
+- ⚡ **Zero External Dependencies:** Built with pure HTML5, CSS3, and Vanilla JavaScript (ES6+).
+- 📱 **Fully Responsive:** Smooth layout execution across all desktop and mobile devices.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- HTML5: Semantic web page structure and layout
-- CSS3: Glassmorphism, Flexbox layout, animations, and visual polish
-- JavaScript (ES6+): Dynamic DOM updates, timing mechanisms
-- Google Fonts: Custom typography (Orbitron for digital displays, Poppins for UI text)
+- **HTML5:** Semantic document structure (`public/index.html`).
+- **CSS3:** Custom styles, modular component CSS, Flexbox, and Glassmorphism effects.
+- **JavaScript (ES6+):** Event handling, modular functions, native `Date` API, and time intervals.
+- **Python:** Automation script for project structure generation.
 
 ---
 
 ## 📂 Project Structure
 
-```
+```text
 digital-clock-stopwatch-timer/
-├── index.html    # Core markup structure & layout
-├── style.css     # Glassmorphism styling & visual design
-└── script.js     # Logic for Clock, Stopwatch, and Timer
+├── public/
+│   └── index.html         # Main Application HTML View
+├── modules/
+│   ├── clock/
+│   │   ├── clock.js       # Real-Time Clock Logic
+│   │   └── clock.css      # Clock Specific Styling
+│   ├── stopwatch/
+│   │   ├── stopwatch.js   # Precision Stopwatch Logic
+│   │   └── stopwatch.css  # Stopwatch Specific Styling
+│   └── timer/
+│       ├── timer.js       # Countdown Timer Logic
+│       └── timer.css      # Timer Specific Styling
+└── app.js                 # App Entry Point & Tab Controller
 
 ```
+
 ---
 
 ## 🚀 How to Run
 
 1. Download or Clone this repository.
 2. Open the `index.html` file directly in any web browser.
+2. **Launch Application:**
+Navigate into the `src/` directory and again navigate to `views` the open `index.html` in any web browser.
 
 ---
-
-```
